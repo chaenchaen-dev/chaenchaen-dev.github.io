@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Park Chae-yeon
-  tagline: Developer. Designer
+  tagline: Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
