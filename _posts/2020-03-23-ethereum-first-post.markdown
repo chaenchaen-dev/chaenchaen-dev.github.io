@@ -5,6 +5,8 @@ excerpt : "인프런(inflearn.com)의 이더리움 입문 바이블: 모든 이�
 
 categories:
   - Ethereum
+  - Blockchain
+  - Solidity
 
 tags:
   - Ethereum
