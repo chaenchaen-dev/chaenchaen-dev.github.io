@@ -14,23 +14,6 @@ timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zo
 
 
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
-
-
-
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
