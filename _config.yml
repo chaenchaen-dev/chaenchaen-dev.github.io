@@ -5,42 +5,6 @@ description: "온종일 삽질"
 show_excerpts: true # set to true to show excerpts on the homepage
 
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # 첫 페이지에보여줄 최근 게시물 수를 지정
-paginate_path: /page:num/
-timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-<<<<<<< HEAD
-=======
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # 블로그 댓글 기능 true
-      share: true
-      related: true
-
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false
-      share: true
-      related: false
-
->>>>>>> 6e5d1bd93cc00b763843afe2ff500364be5552a1
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
