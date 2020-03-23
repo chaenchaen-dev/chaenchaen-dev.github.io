@@ -1,6 +1,6 @@
 title: chaenchaen-dev Blog <3
 author: GitHub User
-email: your-email@domain.com
+email: chaeni1098@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Park Chae-yeon
-  tagline: Developer
+  tagline: Student
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
