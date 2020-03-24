@@ -21,7 +21,7 @@ tags:
 
 1. **게스**(geth) / **패리티**(parity) 클라이언트   
 
-![Ethereum Blockchain Network](./_img/1_pic.png){: .align-center}
+![Ethereum Blockchain Network](_img/1_pic.png){: .align-center}
 
   - Geth
     - 이더리움 재단이 제공하는 공식 클라이언트 소프트웨어
