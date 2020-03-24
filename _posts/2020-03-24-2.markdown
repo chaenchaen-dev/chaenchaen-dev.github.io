@@ -24,7 +24,9 @@ tags:
 
 1. **게스**(geth) / **패리티**(parity) 클라이언트   
 
-<center>![ss1](/assets/ss1.png)</center>
+<center>
+![ss1](/assets/ss1.png)
+</center>
 
   - Geth
     - 이더리움 재단이 제공하는 공식 클라이언트 소프트웨어
