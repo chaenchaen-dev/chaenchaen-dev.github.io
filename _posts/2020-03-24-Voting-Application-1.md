@@ -32,7 +32,7 @@ $ node -v
 $ npm -v
 ```
 
-2. **가나슈**(Ganache), **Web3.js**, **솔리디티 컴파일러** 설치
+1. **가나슈**(Ganache), **Web3.js**, **솔리디티 컴파일러** 설치
 ```
 $ mkdir ethereum_voting_dapp
 $ cd ethereum_voting_dapp/
