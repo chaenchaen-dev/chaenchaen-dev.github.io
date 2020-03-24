@@ -42,4 +42,75 @@ tags:
 
 ![컴파일러 설정](/assets/스크린샷%202020-03-25%20오전%203.21.10.png)
 
-컨트랙트에서 첫 번째로 써야되는 코드는 어떤 컴파일러 버전을 이 컨트랙트에 적용할 것인가이다. 만약, 다른 버전 컴파일러를 쓴다면 컴파일이 되지 않음
+컨트랙트에서 첫 번째로 써야되는 코드는 어떤 컴파일러 버전을 이 컨트랙트에 적용할 것인가이다. 만약, 다른 버전 컴파일러를 쓴다면 컴파일이 되지 않는다.
+
+
+<br/>
+
+* * *
+
+<br/>
+
+
+### 3가지 기능을 포함한 컨트랙트 작성
+
+컴파일러 버전 오류로 인해 약간의 **수정** 이 있음!!
+```
+pragma solidity ^0.6.4;
+
+contract Voting{
+
+    bytes32[] public candidateList;
+    constructor(bytes32[] memory candidateNames) public {
+        candidateList = candidateNames;
+    }
+
+    mapping (bytes32 => uint8) public votesReceived;
+
+    function voteForCandidate(bytes32 candidate) public {
+        require(validCandidate(candidate));
+        votesReceived[candidate] += 1;
+    }
+    function totalVotesFor(bytes32 candidate) view public returns(uint8){
+        require(validCandidate(candidate));
+        return votesReceived[candidate];
+    }
+    function validCandidate(bytes32 candidate) view public returns (bool){
+        for(uint i=0; i < candidateList.length; i++){
+            if(candidateList[i] == candidate){
+                return true;
+            }
+        }
+        return false;
+    }
+
+}
+```
+![컨트랙트 코드](/assets/스크린샷%202020-03-25%20오전%203.36.05.png)
+
+<br/>
+
+### 컨트랙트 컴파일하기
+
+작성한 컨트랙트 코드를 복사한 뒤, **터미널** (terminal)을 실행
+terminal로 프로젝트 폴더 아래에 **Voting.sol 파일을 생성** 한다.
+```
+$ vi Voting.sol
+```
+
+![Voting.sol 파일 생성 터미널](/assets/스크린샷%202020-03-25%20오전%203.41.45.png)
+
+**esc + :wq** 입력 (저장하고 vim 나가기)
+
+터미널로 돌아와 node.js를 **chapter1 디렉토리에서 실행** 한다.
+```
+$ node_modules/.bin/solcjs --bin --abi Voting.sol
+```
+
+<br/>
+
+* * *
+
+<br/>
+
+### 블록체인에 배포하는 단계
