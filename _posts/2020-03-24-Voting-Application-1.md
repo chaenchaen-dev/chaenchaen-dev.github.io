@@ -58,7 +58,9 @@ $ npm install ganache-cli web3@0.20.3 solc
 
 위의 스크린샷은 3가지가 설치 되었을 시에 나오는 결과 화면
 
-> 이 부분에서 npm 오류가 대량 발생해서 Node.js와 npm을 전체 삭제하고 새로 진행하였다. 맥에서 Node.js 삭제하는 방법 블로그 <https://gomugom.github.io/how-to-remove-node-from-macos/>
+> 이 부분에서 npm 오류가 대량 발생해서 Node.js와 npm을 전체 삭제하고 새로 진행하였다. 맥에서 Node.js 삭제하는 방법 [블로그](https://gomugom.github.io/how-to-remove-node-from-macos/)
+
+> WARN으로 no such file or directory, open ...  package.json 문구가 뜨는 경우에는 [블로그](http://blog.naver.com/PostView.nhn?blogId=chandong83&logNo=221064506346&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView) 참고
 
 > 또 다른 오류로 WARN이 굉장히 많이 뜨는 경우에는 **HomeBrew**가 설치되지 않아서일 수 있다. 첫 줄 참고!
 
