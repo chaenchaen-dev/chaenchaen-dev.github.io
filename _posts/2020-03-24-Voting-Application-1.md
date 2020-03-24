@@ -67,7 +67,9 @@ $ npm install ganache-cli web3@0.20.3 solc
 $ node_modules/.bin/ganache-cli
 ```
 
-terminal에 **Available Accounts** 10개와 각 계정에 해당하는 **Private Keys** 10개가 출력되었다면 성공 (각 계정에는 테스트로 100이더가 들어있음)
+terminal에 **Available Accounts** 10개와 각 계정에 해당하는 **Private Keys** 10개가 출력되었다면 성공 (각 계정에는 테스트로 100ETH가 들어있음)
+
+![ganache-result](/assets/ganache-result.png)
 
 <br/>
 
@@ -84,9 +86,11 @@ terminal에 **Available Accounts** 10개와 각 계정에 해당하는 **Private
   5. `web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))` 8545는 블록체인이 실행되는 포트
   6. `web3.eth.accounts`
   7. 출력되는 계정들은 가나슈를 실행했을 때 만들어진 Available Accounts 목록과 같다.
-  8. `web3.eth.getBalance('0x00fee25262cb7E0E02d0E6fF27DB2d7c84C671B3')` //'' 안에는 **본인에게 만들어진 계정** 중 하나 사용할 것
+  ![accounts-result](/assets/accounts-result.png)
+  8. `web3.eth.getBalance('0x00fee25262cb7E0E02d0E6fF27DB2d7c84C671B3')` 괄호 안에는 **본인에게 만들어진 계정** 중 하나 사용할 것
   9. 해당되는 계좌의 잔고를 알 수 있다. ( 단위는 wei **1ETH = 10^18wei** )
-    ETH 단위로 얼마인지 알고 싶다면 `web3.fromWei('_______잔액______','ether')`을 사용하면 된다.
+  ![balance-result](/assets/balance-result_9bceeh3xl.png)
+  10. ETH 단위로 얼마인지 알고 싶다면 `web3.fromWei('_______잔액______','ether')`을 사용하면 된다.
 
 
 <br/>
