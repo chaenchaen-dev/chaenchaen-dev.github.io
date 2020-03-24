@@ -5,7 +5,7 @@ excerpt : "인프런(inflearn.com)의 이더리움 입문 바이블: 모든 이�
 
 categories:
   - Ethereum
-  - Geth
+  - Geth!
   - Parity
   - Ganache
   - Etherscan
@@ -24,7 +24,7 @@ tags:
 
 1. **게스**(geth) / **패리티**(parity) 클라이언트   
 
-![Ethereum Blockchain Network](/Users/cookie/github/chaenchaen-dev.github.io/_img/1_pic.png){: .align-center}
+![ss1](/assets/ss1.png){: .align-center}
 
   - Geth
     - 이더리움 재단이 제공하는 공식 클라이언트 소프트웨어
