@@ -23,7 +23,9 @@ tags:
 <br/>
 
  **게스**(geth) / **패리티**(parity) 클라이언트
+
 <br/>
+
   - Geth
     - 이더리움 재단이 제공하는 공식 클라이언트 소프트웨어
     - Go언어로 개발
@@ -31,9 +33,7 @@ tags:
     - 블록을 채굴하고, 블록체인에 트랜잭션을 추가
     - 블록의 트래잭션을 검증하며 트랜잭션 실행 가능
     - RPC를 통해 서버 역할도 할 수 있음
-    - 블록체인에 연결할 수 있는 자바스크립트 클라이언트도 있음   
-
-    ![Ethereum Blockchain Network](/assets/ss1.png)
+    - 블록체인에 연결할 수 있는 자바스크립트 클라이언트도 있음  ![Ethereum Blockchain Network](/assets/ss1.png)
 
   - Parity
     - 이더리움 프로토콜의 또 다른 구현체
@@ -64,7 +64,7 @@ tags:
 
  **메타마스크** (Metamask)
  메타마스크는 이더리움을 보유하고 송금 및 관리할 수 있는 암호화폐 지갑
- 
+
 [메타마스크 사용방법](https://medium.com/@mvlchain/%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC-metamask-%EC%82%AC%EC%9A%A9%EB%B2%95-bd0f219bdc62)
 
 
