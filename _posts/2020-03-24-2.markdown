@@ -42,7 +42,19 @@ tags:
     - 원한다면 이더리움 황서의 사양을 따라 자신의 클라이언트를 구현 가능   
 
 
-2. Web3.js / Truffle
+2. **Web3.js** / **트러플** (Truffle)   
+
+  - Web3.js
+    - 이더리움 블록체인과 상호작용하는데 사용되는 자바스크립트 라이브러리
+    - 또 다른 라이브러리로 Ethers.js도 있음   
+
+  - Truffle
+    - Dapps 개발에 가장 널리 사용되는 프레임워크 중 하나
+    - 스마트 컨트랙트(Smart Contract)를 컴파일하고 배포하는 복잡성을 추상화함
+    - 자세한 내용은 <http://truffleframework.com/>에서 확인
+
+
+
 3. **가나슈** (Ganache)
 4. **메타마스크** (Metamask)
 5. **이더스캔** (Etherscan)
