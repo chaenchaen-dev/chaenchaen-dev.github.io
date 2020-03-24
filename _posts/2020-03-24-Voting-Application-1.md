@@ -60,16 +60,23 @@ $ npm install ganache-cli web3@0.20.3 solc
 
 > 이 부분에서 npm 오류가 대량 발생해서 Node.js와 npm을 전체 삭제하고 새로 진행하였다. 맥에서 Node.js 삭제하는 방법 블로그 <https://gomugom.github.io/how-to-remove-node-from-macos/>
 
-> 또 다른 오류로 WARN이 굉장히 많이 뜨는 경우에는 HomeBrew가 설치되지 않아서일 수 있다. 첫 줄 참고!
+> 또 다른 오류로 WARN이 굉장히 많이 뜨는 경우에는 **HomeBrew**가 설치되지 않아서일 수 있다. 첫 줄 참고!
 
 제대로 동작하는지 확인하기 위해 **가나슈를 실행**
 ```
 $ node_modules/.bin/ganache-cli
 ```
 
-terminal에 Available Accounts 10개와 각 계정에 해당하는 Private Keys 10개가 출력되었다면 성공 (각 계정에는 테스트로 100이더가 들어있음)
+terminal에 **Available Accounts** 10개와 각 계정에 해당하는 **Private Keys** 10개가 출력되었다면 성공 (각 계정에는 테스트로 100이더가 들어있음)
 
-- 실제로 계정마다 100이더씩 들어 있는지 확인하기
+<br/>
+
+* * *
+
+<br/>
+
+#### 실제로 계정마다 100이더씩 들어 있는지 확인하기
+
   1. 터미널 탭을 하나 새로 연다
   2. ```$ cd ethereum_voting_dapp/chapter1/``` 프로젝트 디렉토리로 진입
   3. ```$ node``` 노드 콘솔 시작
@@ -77,7 +84,7 @@ terminal에 Available Accounts 10개와 각 계정에 해당하는 Private Keys 
   5. ```web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))``` 8545는 블록체인이 실행되는 포트
   6. ```web3.eth.accounts```
   7. 출력되는 계정들은 가나슈를 실행했을 때 만들어진 Available Accounts 목록과 같다.
-  8. ```web3.eth.getBalance('0x00fee25262cb7E0E02d0E6fF27DB2d7c84C671B3')``` //'' 안에는 본인에게 만들어진 계좌 중 하나 사용할 것
+  8. ```web3.eth.getBalance('0x00fee25262cb7E0E02d0E6fF27DB2d7c84C671B3')``` //'' 안에는 **본인에게 만들어진 계정** 중 하나 사용할 것
   9. 해당되는 계좌의 잔고를 알 수 있다. ( 단위는 wei **1ETH = 10^18wei** )
     ETH 단위로 얼마인지 알고 싶다면 ```web3.fromWei('_______잔액______','ether')```을 사용하면 된다.
 
