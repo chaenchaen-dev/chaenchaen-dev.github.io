@@ -86,7 +86,8 @@ contract Voting{
 
 }
 ```
-![컨트랙트 코드](/assets/스크린샷%202020-03-25%20오전%203.36.05.png)
+
+![voting-2](/assets/voting-2_rhirt0hhe.png)
 
 <br/>
 
@@ -98,7 +99,7 @@ terminal로 프로젝트 폴더 아래에 **Voting.sol 파일을 생성** 한다
 $ vi Voting.sol
 ```
 
-![Voting.sol 파일 생성 터미널](/assets/스크린샷%202020-03-25%20오전%203.41.45.png)
+![terminal-1](/assets/terminal-1.png)
 
 **esc + :wq** 입력 (저장하고 vim 나가기)
 
