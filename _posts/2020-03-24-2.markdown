@@ -21,7 +21,7 @@ tags:
 
 1. **게스**(geth) / **패리티**(parity) 클라이언트   
 
-![Ethereum Blockchain Network](./img/1_pic.png){: .align-center}
+![Ethereum Blockchain Network](./_img/1_pic.png){: .align-center}
 
   - Geth
     - 이더리움 재단이 제공하는 공식 클라이언트 소프트웨어
@@ -36,7 +36,9 @@ tags:
   - Parity
     - 이더리움 프로토콜의 또 다른 구현체
     - 러스트(Rust) 프로그래밍 언어로 개발
-    - 원한다면 이더리움 황서의 사양을 따라 자신의 클라이언트를 구현 가능
+    - 원한다면 이더리움 황서의 사양을 따라 자신의 클라이언트를 구현 가능   
+
+
 2. Web3.js / Truffle
 3. **가나슈** (Ganache)
 4. **메타마스크** (Metamask)
