@@ -22,10 +22,8 @@ tags:
 
 <br/>
 
-1. **게스**(geth) / **패리티**(parity) 클라이언트   
-
-![ss1](/assets/ss1.png)
-
+1. **게스**(geth) / **패리티**(parity) 클라이언트
+<br/>
   - Geth
     - 이더리움 재단이 제공하는 공식 클라이언트 소프트웨어
     - Go언어로 개발
@@ -35,29 +33,53 @@ tags:
     - RPC를 통해 서버 역할도 할 수 있음
     - 블록체인에 연결할 수 있는 자바스크립트 클라이언트도 있음   
 
+ ![Ethereum Blockchain Network](/assets/ss1.png)
 
   - Parity
     - 이더리움 프로토콜의 또 다른 구현체
     - 러스트(Rust) 프로그래밍 언어로 개발
-    - 원한다면 이더리움 황서의 사양을 따라 자신의 클라이언트를 구현 가능   
+    - 원한다면 이더리움 황서의 사양을 따라 자신의 클라이언트를 구현 가능
+    ![parity Ethereum Blockchain Network](/assets/ss2.png)
 
 <br/>
 
-2. **Web3.js** / **트러플** (Truffle)   
+2. **Web3.js** / **트러플** (Truffle)
 
   - Web3.js
-    - 이더리움 블록체인과 상호작용하는데 사용되는 자바스크립트 라이브러리
+    - 이더리움 블록체인과 상호작용하는데 사용되는 **자바스크립트 라이브러리**
     - 또 다른 라이브러리로 Ethers.js도 있음   
 
   - Truffle
-    - Dapps 개발에 가장 널리 사용되는 프레임워크 중 하나
+    - Dapps 개발에 가장 널리 사용되는 **프레임워크** 중 하나
     - 스마트 컨트랙트(Smart Contract)를 컴파일하고 배포하는 복잡성을 추상화함
     - 자세한 내용은 <http://truffleframework.com/>에서 확인
 
-
-
+<br/>
 
 3. **가나슈** (Ganache)
+  메모리 내 블록체인으로 테스트를 위해 100개의 이더가 미리 탑재된 10개의 테스트 계정을 확보하게 된다는 **장점** 이 있다.
+
+<br/>
+
 4. **메타마스크** (Metamask)
+
+<br/>
+
 5. **이더스캔** (Etherscan)
+  이더스캔은 이더스캔 사에서 서비스하는 무료 프론트앤드 애플리케이션
+  퍼블릭 이더리움 블록체인의 모든 주소, 트랜잭션과 블록에 대한 **정보** 를 확인할 수 있다.
+    - [메인넷](https://etherscan.io/)
+    - [Ropsten](https://ropsten.etherscan.io/)
+    - [Rinkeby]( https://rinkeby.etherscan.io/)
+    - [Kovan](https://kovan.etherscan.io/)
+
+<br/>
+
 6. **리믹스** (Remix)
+  스마트 컨트랙트를 코딩하는 데 사용할 수 있는 브라우저 [리믹스  IDE](https://remix.ethereum.org)
+  직접 다양한 네트워크에 스마트 컨트랙트를 컴파일, 배포, 상호작용할 수 있다. 하지만 리믹스는 전문적인 스마트 계약 개발을 위해서 쓰기엔 좋지 않기 때문에 **Vim, Atom, Visual Studio** 등과 같은 편집기를 개발용으로 사용하고, 스마트 컨트랙트 컴파일 및 배포에는 **트러플 프레임 워크** 를 권장한다.
+
+
+<br/>
+
+<br/>
