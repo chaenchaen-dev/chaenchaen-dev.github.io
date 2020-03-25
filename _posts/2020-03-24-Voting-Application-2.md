@@ -111,3 +111,29 @@ $ node_modules/.bin/solcjs --bin --abi Voting.sol
 <br/>
 
 ### 블록체인에 배포하는 단계
+
+<br/>
+
+ABI 정의를 전달해서 VotingContract라는 객체를 생성한다.
+```
+$ node //노드에 진입해서
+> Web3 = require('web3')
+> web3 = new Web3("http://localhost:8545") //.json 형식의 파일이 나옴
+> bytecode = fs.readFileSync('./Voting_sol_Voting.bin').toString()
+```
+
+여기까지 ABI정의 완료!
+
+```
+> abi = fs.readFileSync('./Voting_sol_Voting.abi').toString()  //abi 정의를 전달
+```
+
+![bytecode](/assets/bytecode.png)
+
+블록체인에 배포하는 건 **스크린샷에 있는 바이트코드**!!
+이 바이트코드는 Voting 컨트랙트를 컴파일한 결과물이다.
+
+```
+> abi = JSON.parse(fs.readFileSync('./Voting_sol_Voting.abi').toString())
+> deployedContract = new web3.eth.Contract(abi)
+```
