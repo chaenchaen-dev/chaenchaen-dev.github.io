@@ -144,3 +144,6 @@ $ node //노드에 진입해서
 Web3 eth contract is not a constructor [참고 페이지](https://ethereum.stackexchange.com/questions/72689/uncaught-typeerror-web3-eth-contract-is-not-a-constructor)
 Uncaught TypeError: Cannot read property 'asciiToHex' of undefined [참고 페이지](https://ethereum.stackexchange.com/questions/68269/cannot-read-property-hextoascii-of-undefined)
 배포 도움 블로그 - <https://pusiu.tistory.com/8>
+
+## 오류사진
+![스크린샷 2020-03-25 오후 5.26.02](/assets/스크린샷%202020-03-25%20오후%205.26.02.png)
