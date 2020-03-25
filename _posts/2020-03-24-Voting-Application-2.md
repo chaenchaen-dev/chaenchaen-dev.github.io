@@ -135,5 +135,6 @@ $ node //노드에 진입해서
 
 ```
 > abi = JSON.parse(fs.readFileSync('./Voting_sol_Voting.abi').toString())
-> deployedContract = new web3.eth.Contract(abi)
+> deployedContract = new web3.eth.contract(abi)  //강의에는 eth.Contract라고 되어있음 -> 오류발생 
 ```
+Web3 eth contract is not a constructor **오류** 참고 [페이지](https://ethereum.stackexchange.com/questions/72689/uncaught-typeerror-web3-eth-contract-is-not-a-constructor)
