@@ -146,4 +146,5 @@ Uncaught TypeError: Cannot read property 'asciiToHex' of undefined [참고 페�
 배포 도움 블로그 - <https://pusiu.tistory.com/8>
 
 ## 오류사진
-![스크린샷 2020-03-25 오후 5.26.02](/assets/스크린샷%202020-03-25%20오후%205.26.02.png)
+
+![ddd1](/assets/ddd1.png)
