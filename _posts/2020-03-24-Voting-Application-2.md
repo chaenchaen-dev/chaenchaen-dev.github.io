@@ -130,11 +130,11 @@ $ node //노드에 진입해서
 
 ![bytecode](/assets/bytecode.png)
 
-블록체인에 배포하는 건 **스크린샷에 있는 바이트코드**!!
+블록체인에 배포하는 건 **바이트코드**!!
 이 바이트코드는 Voting 컨트랙트를 컴파일한 결과물이다.
 
 ```
 > abi = JSON.parse(fs.readFileSync('./Voting_sol_Voting.abi').toString())
-> deployedContract = new web3.eth.contract(abi)  //강의에는 eth.Contract라고 되어있음 -> 오류발생 
+> deployedContract = new web3.eth.contract(abi)  //강의에는 eth.Contract라고 되어있음 -> 오류발생
 ```
 Web3 eth contract is not a constructor **오류** 참고 [페이지](https://ethereum.stackexchange.com/questions/72689/uncaught-typeerror-web3-eth-contract-is-not-a-constructor)
