@@ -33,11 +33,41 @@ tags:
 
 [File] - [Open] - dapp-example 폴더 선택
 
-![intelliJ_file_open](/assets/pic/0406/intelliJ_file_open.png){: width="80%"}
+![intelliJ_file_open](/assets/pic/0406/intelliJ_file_open.png){: width="90%"}
 
-솔리디티 파일 만들기
+[contracts]에 HelloWorld 솔리디티 파일 만들기
 
-![intelliJ_file_open](/assets/pic/0406/new_solidity_file.png){: width="80%"}
+![intelliJ_file_open](/assets/pic/0406/new_solidity_file.png){: width="90%"}
+
+HelloWorld.sol **솔리디티 컴파일러 버전** 을 **0.5.8** 로 변경
+
+![sol_version_check](/assets/pic/0406/sol_version_check.png){: width="90%"}
+![sol_v](/assets/pic/0406/sol_v.png)
+
+HelloWorld.sol 작성 후 compile
+```
+pragma solidity ^0.5.1;
+
+contract HelloWorld {
+    string public greeting;
+
+    constructor(string memory _greeting) public {
+        greeting = _greeting;
+    }
+    function setGreeting(string memory _greeting) public{
+        greeting = _greeting;
+    }
+    function say() public view returns(string memory){    //출력
+        return greeting;
+    }
+}
+
+//terminal
+$ truffle compile     //contracts에 있는 파일 모두 컴파일
+```
+![helloworld1](/assets/pic/0406/helloworld1.png){: width="90%"}
+![helloworld2](/assets/pic/0406/helloworld2.png){: width="50%"}
+
 
 
 
