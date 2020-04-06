@@ -29,7 +29,7 @@ tags:
 Mac OS를 기준으로 **트러플 설치**
 **node** 와 **npm** 다운로드가 **완료된 상태** 가정하에 트러플 설치를 시작한다.
 
-먼저, 터미널에서 **node** 버전을 확인 후 Truffle을 설치한다.
+먼저, 터미널에서 **node** 버전을 확인 후 **Truffle을 설치** 한다.
 
 ```
 $ node -v
@@ -44,3 +44,15 @@ $ truffle version
 ##### 트러플 설치 오류
 - **checkPermissions** Missing write access to /usr/local/lib/node_modules
 - **sudo** npm install -g truffle 명령으로 해결 [참고 블로그](https://blog.sonim1.com/125)
+
+디렉토리를 만들고, 그 경로로 이동한 후 소스폴더를 생성한다.
+truffle init은 npm init과 같은 역할을 수행
+```
+$ mkdir dapp-example
+$ cd dapp-example/
+$ truffle init
+$ ls        // 생성된 폴더 목록 확인
+```
+
+![소스폴더 생성까지](/assets/소스폴더%20생성까지.png)
+![4가지폴더](/assets/4가지폴더.png)
