@@ -88,7 +88,7 @@ $ truffle compile     //contracts에 있는 파일 모두 컴파일
 ***
 
 <br/>
-**truffle_config.js** 에 **path 지정**
+### **truffle_config.js** 에 **path 지정**
 
 ```
 const path = require("path");
