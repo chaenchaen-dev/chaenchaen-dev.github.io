@@ -29,3 +29,7 @@ tags:
 로컬 이더리움 [Ganache](https://github.com/trufflesuite/ganache/releases)를 본인의 OS에 맞게 **다운** 받는다.
 
 ![ganache_download](/assets/pic/0406/ganache_download.png){: width="90%"}
+
+**Ganache** 실행
+
+![ganache1](/assets/pic/0406/ganache1.png){: width="80%"}
