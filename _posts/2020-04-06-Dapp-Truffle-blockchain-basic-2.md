@@ -32,4 +32,29 @@ tags:
 ![sol_plugin](/assets/pic/0406/sol_plugin.png){: width="80%"}
 
 [File] - [Open] - dapp-example 폴더 선택
+
 ![intelliJ_file_open](/assets/pic/0406/intelliJ_file_open.png){: width="80%"}
+
+솔리디티 파일 만들기
+
+![intelliJ_file_open](/assets/pic/0406/new_solidity_file.png){: width="80%"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
