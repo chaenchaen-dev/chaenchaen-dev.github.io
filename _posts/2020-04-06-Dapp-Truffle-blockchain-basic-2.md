@@ -31,7 +31,7 @@ tags:
  **IntelliJ** 에서 솔리디티 언어를 작성하려면 **플러그인 다운로드 필수**
 ![sol_plugin](/assets/pic/0406/sol_plugin.png){: width="80%"}
 
-[File] - [Open] - dapp-example 폴더 선택
+[File] - [Open] - **dapp-example** 폴더 선택
 
 ![intelliJ_file_open](/assets/pic/0406/intelliJ_file_open.png){: width="90%"}
 
@@ -42,9 +42,9 @@ tags:
 HelloWorld.sol **솔리디티 컴파일러 버전** 을 **0.5.8** 로 변경
 
 ![sol_version_check](/assets/pic/0406/sol_version_check.png){: width="90%"}
-![sol_v](/assets/pic/0406/sol_v.png)
+![sol_v](/assets/pic/0406/sol_v.png){: width="50%"}
 
-HelloWorld.sol 작성 후 compile
+**HelloWorld.sol** 작성
 ```
 pragma solidity ^0.5.1;
 
@@ -65,8 +65,23 @@ contract HelloWorld {
 //terminal
 $ truffle compile     //contracts에 있는 파일 모두 컴파일
 ```
+
+<br/>
+
+* * *
+
+<br/>
+
+### HelloWorld.sol 컴파일
+
+**compile** -> **.json 파일 자동 생성**
+
 ![helloworld1](/assets/pic/0406/helloworld1.png){: width="90%"}
 ![helloworld2](/assets/pic/0406/helloworld2.png){: width="50%"}
+
+**json** 파일에서 **중요** 부분은 **abi** , **bytecode** , **deployedBytecode**
+
+![helloworld3](/assets/helloworld3.png){: width="90%"}
 
 
 
