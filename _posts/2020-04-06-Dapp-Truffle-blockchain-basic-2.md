@@ -81,8 +81,27 @@ $ truffle compile     //contracts에 있는 파일 모두 컴파일
 
 **json** 파일에서 **중요** 부분은 **abi** , **bytecode** , **deployedBytecode**
 
-![helloworld3](/assets/helloworld3.png){: width="90%"}
+![helloworld3](/assets/pic/0406/helloworld3.png){: width="90%"}
 
+**truffle_config.js** 에 **path 지정**
+
+```
+const path = require("path");
+contracts_bulid_directory: path.join(__dirname, "client/src/contracts"),
+```
+![add_path](/assets/pic/0406/add_path.png){: width="90%"}
+![helloworld4](/assets/pic/0406/helloworld4.png){: width="90%"}
+
+다시 터미널에서 **compile** 하면 **지정한 위치** 에 컴파일 결과가 **저장** 되는 것을 확인할 수 있다.
+
+```
+$ truffle compile --all
+```
+![re_compile](/assets/pic/0406/re_compile.png){: width="50%"}
+> path를 따로 지정하지 않고 default값인 경우에 저장 경로
+
+![helloworld5](/assets/pic/0406/helloworld5.png){: width="50%"}
+> path를 지정해줬을 경우의 파일 저장 경로
 
 
 
