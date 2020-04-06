@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
 
 @font-face {
-  font-family: 'Nanum Gothic', sans-serif, 'fontello';
-  // font-family: 'fontello';
+  font-family: 'fontello';
   src: url('../font/fontello.eot?26793073');
   src: url('../font/fontello.eot?26793073#iefix') format('embedded-opentype'),
        url('../font/fontello.woff2?26793073') format('woff2'),
@@ -24,8 +23,7 @@
 */
 
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  //font-family: "fontello";
-  font-family: 'Nanum Gothic', sans-serif,"fontello";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
