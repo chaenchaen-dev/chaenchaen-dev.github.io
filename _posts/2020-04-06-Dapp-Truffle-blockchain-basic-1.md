@@ -37,7 +37,7 @@ $ npm install -g truffle
 $ truffle version
 ```
 
-![nodeversion](/assets/pic/0406/nodeversion.png)
+![nodeversion](/assets/pic/0406/nodeversion.png){: width="30%"}
 ![truffle_install](/assets/pic/0406/truffle_install.png)
 ![truffle_version_check](/assets/pic/0406/truffle_version_check.png)
 
