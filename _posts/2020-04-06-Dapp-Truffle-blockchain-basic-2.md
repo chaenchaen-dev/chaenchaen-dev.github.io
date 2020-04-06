@@ -83,6 +83,11 @@ $ truffle compile     //contracts에 있는 파일 모두 컴파일
 
 ![helloworld3](/assets/pic/0406/helloworld3.png){: width="90%"}
 
+<br/>
+
+***
+
+<br/>
 **truffle_config.js** 에 **path 지정**
 
 ```
@@ -102,6 +107,8 @@ $ truffle compile --all
 
 ![helloworld5](/assets/pic/0406/helloworld5.png){: width="50%"}
 > path를 지정해줬을 경우의 파일 저장 경로
+
+
 
 
 
