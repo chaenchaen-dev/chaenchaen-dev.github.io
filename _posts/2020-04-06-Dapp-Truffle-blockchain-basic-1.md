@@ -45,6 +45,12 @@ $ truffle version
 - **checkPermissions** Missing write access to /usr/local/lib/node_modules
 - **sudo** npm install -g truffle 명령으로 해결 [참고 블로그](https://blog.sonim1.com/125)
 
+<br/>
+
+* * *
+
+<br/>
+
 디렉토리를 만들고, 그 경로로 이동한 후 소스폴더를 생성한다.
 truffle init은 npm init과 같은 역할을 수행
 ```
@@ -56,3 +62,9 @@ $ ls        // 생성된 폴더 목록 확인
 
 ![truffle_check2](/assets/pic/0406/truffle_check2.png)
 ![folder_check](/assets/pic/0406/folder_check.png)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
