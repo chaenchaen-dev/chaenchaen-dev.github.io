@@ -37,9 +37,9 @@ $ npm install -g truffle
 $ truffle version
 ```
 
-![nodeversion](/assets/pic/0406/nodeversion.png){: width="30%"}
+![nodeversion](/assets/pic/0406/nodeversion.png){: width="40%"}
 ![truffle_install](/assets/pic/0406/truffle_install.png)
-![truffle_version_check](/assets/pic/0406/truffle_version_check.png)
+![truffle_version_check](/assets/pic/0406/truffle_version_check.png){: width="40%"}
 
 ##### 트러플 설치 오류
 - **checkPermissions** Missing write access to /usr/local/lib/node_modules
@@ -60,8 +60,8 @@ $ truffle init
 $ ls        // 생성된 폴더 목록 확인
 ```
 
-![truffle_check2](/assets/pic/0406/truffle_check2.png)
-![folder_check](/assets/pic/0406/folder_check.png)
+![truffle_check2](/assets/pic/0406/truffle_check2.png){: width="40%"}
+![folder_check](/assets/pic/0406/folder_check.png){: width="60%"}
 
 <br/>
 <br/>
