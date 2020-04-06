@@ -2,12 +2,13 @@
 
 @font-face {
   font-family: 'Nanum Gothic', sans-serif;
-  src: url('../font/fontello.eot?26793073');
-  src: url('../font/fontello.eot?26793073#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?26793073') format('woff2'),
-       url('../font/fontello.woff?26793073') format('woff'),
-       url('../font/fontello.ttf?26793073') format('truetype'),
-       url('../font/fontello.svg?26793073#fontello') format('svg');
+  // font-family: 'fontello';
+  // src: url('../font/fontello.eot?26793073');
+  // src: url('../font/fontello.eot?26793073#iefix') format('embedded-opentype'),
+  //      url('../font/fontello.woff2?26793073') format('woff2'),
+  //      url('../font/fontello.woff?26793073') format('woff'),
+  //      url('../font/fontello.ttf?26793073') format('truetype'),
+  //      url('../font/fontello.svg?26793073#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +24,8 @@
 */
 
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+  //font-family: "fontello";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: normal;
   speak: none;
