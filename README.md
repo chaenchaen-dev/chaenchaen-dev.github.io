@@ -1,2 +1,3 @@
 # chaenchaen-dev.github.io
-git hub 블로그 
+
+온종일 삽질하는 과정을 담은 블로그
