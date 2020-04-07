@@ -93,7 +93,7 @@ networks에서 **development 주석 해제** 하고 가나슈 정보와 **일치
 > truffle migrate --reset     //처음부터 새로 배포하는 명령어
 ```
 
-![result1](/assets/result1.png){: width="50%"} ![result2](/assets/result2.png){: width="50%"}
+![result2](/assets/result2.png){: width="50%"} ![result1](/assets/result1.png){: width="50%"} 
 
 <br/>
 
