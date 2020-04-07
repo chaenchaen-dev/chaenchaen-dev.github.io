@@ -96,6 +96,10 @@ networks에서 **development 주석 해제** 하고 가나슈 정보와 **일치
 ![result1](/assets/result1.png){: width="50%"} ![result2](/assets/result2.png){: width="50%"}
 
 <br/>
+
+로컬 **가나슈**(Ganache)에 **배포 성공**
+
+<br/>
 <br/>
 <br/>
 <br/>
