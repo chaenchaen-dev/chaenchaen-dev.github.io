@@ -75,7 +75,7 @@ module.exports = function(deployer) {
 
 networks에서 **development 주석 해제** 하고 가나슈 정보와 **일치** 하게 수정한다.
 
-![script4](/assets/pic/0406/script4.png){: width="70%"}
+![script4](/assets/pic/0406/script4.png)
 ![script5](/assets/pic/0406/script5_v76ndgs8s.png){: width="40%"}
 > contract address 즉, 스마트 컨트랙트 주소가 부여
 
