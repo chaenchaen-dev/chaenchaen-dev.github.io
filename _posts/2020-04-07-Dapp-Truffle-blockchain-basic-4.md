@@ -51,10 +51,11 @@ tags:
 $ sudo npm install node-gyp -g      //해결
 ```
 
-나머지 오류 등등 
+나머지 오류 등등
 ![err1](/assets/err1.png)
 ![err2](/assets/err2.png)
 
+오류 참고 주소 - <https://github.com/nodejs/node-gyp/issues/1941>
 
 
 
