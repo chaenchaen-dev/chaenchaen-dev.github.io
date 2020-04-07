@@ -57,7 +57,17 @@ $ sudo npm install node-gyp -g      //해결
 
 오류 참고 주소 - <https://github.com/nodejs/node-gyp/issues/1941>
 
-
+npm 버전이 오류인 것 같아서 npm 업데이트
+```
+$ npm update npm -g
+```
+대량 오류 발생
+![npm_err1](/assets/npm_err1.png)
+```
+$ sudo npm update npm -g
+```
+업데이트 성공
+![npm_update](/assets/npm_update.png){: width="70%"}
 
 <br/>
 <br/>
