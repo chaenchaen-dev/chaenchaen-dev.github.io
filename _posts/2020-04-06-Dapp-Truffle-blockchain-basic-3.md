@@ -58,10 +58,12 @@ tags:
 **2_deploy_hello.js** 작성
 
 ```
-const helloWorld = artifacts.require("HelloWorld");   // HelloWorld 컨트랙트 이름 (배포되어야 할 컨트랙트의 이름을 써준다.)
+const helloWorld = artifacts.require("HelloWorld");   // HelloWorld 컨트랙트 이름
+//  배포되어야 할 컨트랙트의 이름을 써준다.
 
 module.exports = function(deployer) {
-    deployer.deploy(helloWorld, "Hello, World!");   //생성자에 파라미터 추가
+    //생성자에 파라미터 추가
+    deployer.deploy(helloWorld, "Hello, World!");   
 }
 ```
 ![script6](/assets/pic/0406/script6.png){: width="90%"}
@@ -89,11 +91,14 @@ networks에서 **development 주석 해제** 하고 가나슈 정보와 **일치
 
 터미널에서 **배포 명령어** 입력
 ```
-> truffle migrate --network development   //development 자리에 배포하려는 타겟의 이름 작성
-> truffle migrate --reset     //처음부터 새로 배포하는 명령어
+//development 자리에 배포하려는 타겟의 이름 작성
+> truffle migrate --network development   
+
+//처음부터 새로 배포하는 명령어
+> truffle migrate --reset     
 ```
 
-![result2](/assets/result2.png){: width="50%"} ![result1](/assets/result1.png){: width="50%"} 
+![result2](/assets/result2.png){: width="50%"} ![result1](/assets/result1.png){: width="50%"}
 
 <br/>
 
