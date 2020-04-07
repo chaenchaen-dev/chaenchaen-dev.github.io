@@ -69,6 +69,11 @@ $ sudo npm update npm -g
 업데이트 성공
 ![npm_update](/assets/npm_update.png){: width="70%"}
 
+react가 없는게 문제인 것 같아서 설치
+```
+$ sudo npm install -g create-react-app
+```
+/Users/cookie/에 package.json 없음
 <br/>
 <br/>
 <br/>
