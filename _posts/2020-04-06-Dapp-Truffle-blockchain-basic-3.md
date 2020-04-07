@@ -52,11 +52,10 @@ tags:
 
 배포할 스크립트 **2_deploy_hello.js 파일** 을 **migrations 폴더** 에 생성한다.
 이때, .js 파일의 이름은 **순서** 를 따라서 만들어야 한다.
-> ex) 1_~~~~.js   2_~~~~.js   3_~~~~.js 이런식으로
 
-![script1](/assets/pic/0406/script1.png) {: width="30%"}
+![script1](/assets/pic/0406/script1.png)
 
-2_deploy_hello 작성
+**2_deploy_hello.js** 작성
 
 ```
 const helloWorld = artifacts.require("HelloWorld");   // HelloWorld 컨트랙트 이름 (배포되어야 할 컨트랙트의 이름을 써준다.)
@@ -94,7 +93,7 @@ networks에서 **development 주석 해제** 하고 가나슈 정보와 **일치
 > truffle migrate --reset     //처음부터 새로 배포하는 명령어
 ```
 
-![result1](/assets/result1.png){: width="30%"} ![result2](/assets/result2.png){: width="30%"}
+![result1](/assets/result1.png){: width="50%"} ![result2](/assets/result2.png){: width="50%"}
 
 <br/>
 <br/>
