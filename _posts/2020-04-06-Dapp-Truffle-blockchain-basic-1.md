@@ -44,7 +44,7 @@ $ truffle version
 ##### 트러플 설치 오류
 - **checkPermissions** Missing write access to /usr/local/lib/node_modules
 - **sudo** npm install -g truffle 명령으로 해결 [참고 블로그](https://blog.sonim1.com/125)
-
+- **Error: EACCES: permission denied**, open '/Users/cookie/.config/truffle/config.json' You don't have access to this file. [참고 블로그](https://stackoverflow.com/questions/57031399/error-eacces-permission-denied-open-root-config-truffle-config-json)
 <br/>
 
 * * *
