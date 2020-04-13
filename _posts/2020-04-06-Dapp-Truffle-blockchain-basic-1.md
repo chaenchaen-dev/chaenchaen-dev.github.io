@@ -41,10 +41,11 @@ $ truffle version
 ![truffle_install](/assets/pic/0406/truffle_install.png)
 ![truffle_version_check](/assets/pic/0406/truffle_version_check.png){: width="40%"}
 
-##### 트러플 설치 오류
+#### 트러플 설치 오류
 - **checkPermissions** Missing write access to /usr/local/lib/node_modules
-- **sudo** npm install -g truffle 명령으로 해결 [참고 블로그](https://blog.sonim1.com/125)
-- **Error: EACCES: permission denied**, open '/Users/cookie/.config/truffle/config.json' You don't have access to this file. [참고 블로그](https://stackoverflow.com/questions/57031399/error-eacces-permission-denied-open-root-config-truffle-config-json)
+- **sudo** npm install -g truffle 명령으로 해결 [참고 블로그](https://blog.sonim1.com/125) -> 얘는 **임시방편!!!**
+- **Error: EACCES: permission denied**, open '/Users/cookie/.config/truffle/config.json' You don't have access to this file. [해결 블로그](http://junsikshim.github.io/2016/01/29/Mac%EC%97%90%EC%84%9C-Node.js-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.html)
+  - 권한에 관한 근본적인 문제 해결 방법 제일강추!!!
 <br/>
 
 * * *
