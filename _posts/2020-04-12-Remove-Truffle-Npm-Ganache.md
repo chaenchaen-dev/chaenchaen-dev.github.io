@@ -38,6 +38,7 @@ $ rm -f 경로    //which truffle로 출력된 경로 사용
 
 ### Nodejs + npm 깔끔하게 삭제하기
 [블로그](https://www.theteams.kr/teams/35/post/67342)에 자세히 나와있으니 명령어 한 번씩 싹 돌려주자
+**Node** 재설치까지 포함한 [블로그](http://junsikshim.github.io/2016/01/29/Mac%EC%97%90%EC%84%9C-Node.js-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.html)
 ```
 $ cd /usr/local/lib
 $ sudo rm -rf node*
@@ -53,6 +54,6 @@ $ sudo rm -rf node*
 
 ### Ganache 삭제하기
 
-응용프로그램에서 Ganache 삭제 처리
+응용프로그램에서 **Ganache** 삭제 처리
 
 개발환경 갈아엎기 성공
