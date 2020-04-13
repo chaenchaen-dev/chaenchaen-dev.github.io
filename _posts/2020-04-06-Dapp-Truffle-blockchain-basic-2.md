@@ -46,7 +46,7 @@ HelloWorld.sol **솔리디티 컴파일러 버전** 을 **0.5.8** 로 변경
 
 **HelloWorld.sol** 작성
 ```
-pragma solidity ^0.5.1;
+pragma solidity ^0.5.8;
 
 contract HelloWorld {
     string public greeting;
@@ -65,7 +65,13 @@ contract HelloWorld {
 //terminal
 $ truffle compile     //contracts에 있는 파일 모두 컴파일
 ```
-
+#### truffle compile 오류 추가 (20.04.13)
+truffle로 dapp-example를 truffle init까지 해서 파일 생성했으나 truffle compile 명령어 수행 시 bash: truffle: command not found 오류 발생
+- 해결방법 [참고 사이트](https://stackoverflow.com/questions/38148521/truffle-command-not-found-after-installation)
+  - 최신 버전의 npm 및 노드가 설치되어 있는지 확인 후 npm과 노드를 최신 버전으로 업데이트
+  ```
+  npm install -g truffle
+  ```
 <br/>
 
 * * *
