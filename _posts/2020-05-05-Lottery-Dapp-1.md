@@ -15,7 +15,7 @@ tags:
 
 <br/>
 
-Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 - 개발환경 세팅
+Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 1부
 -------------------
 
 <br/>
