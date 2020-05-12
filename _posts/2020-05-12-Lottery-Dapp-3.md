@@ -239,5 +239,43 @@ module.exports = async (promise) => {
 ![test5](/assets/pic/200512/test5.png){: width="70%"}
 
 <br/>
+
+* * *
+
+<br/>
+
+
+
+### Receipt 값 출력해서 확인하기
+
+**lottery.test.js** 에서 **describe** 수정 후 **테스트**
+
+```
+    describe('Bet', function () {
+        it('should fail when the bet money is not 0.005 ETH', async () => { //돈이 적절히 들어왔는지 확인
+            // Fail transaction
+            await assertRevert(lottery.bet('0xab', {from : user1, value:4000000000000000})); // 0.004 ETH
+            // transaction object {chainId, value, to, from, gas(Limit), gasPrice}
+        })
+        it.only('should put the bet to the bet queue with 1 bet', async () => { // 값이 적절히 들어왔는지 확인
+            // await lottery.bet('0xab', {from : user1, value:5000000000000000}); // 0.005 ETH success
+            // bet
+            let receipt = await lottery.bet('0xab', {from : user1, value:5000000000000000}); // 0.005 ETH
+            console.log(receipt); //receipt 확인해보기
+            // check contract balance
+
+            // check bet info
+
+            // check log
+
+        })
+    })
+```
+![receipt_test](/assets/pic/200512/receipt_test.png)
+
+receipt 안의 값이 어떤 것이 있는지 확인할 수 있다.
+
+
+<br/>
 <br/>
 <br/>
