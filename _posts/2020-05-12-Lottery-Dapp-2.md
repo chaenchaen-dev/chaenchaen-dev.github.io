@@ -31,7 +31,13 @@ Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 2부
 ```
 ![truffle_init](/assets/pic/200512/truffle_init.png)
 
-Visual Studio에서 project 열기
+</br>
+
+***
+
+</br>
+
+#### Visual Studio에서 project 열기
 
 1. contracts 에 Lottery.sol 파일 추가
 - Lottery.sol에 코드 추가
@@ -48,6 +54,12 @@ Visual Studio에서 project 열기
 - development 주석 제거 (로컬에 배포하기 위해서)
 6. truffle migrate
 - 재시도 했을 경우 truffle migrate --reset
+
+</br>
+
+***
+
+</br>
 
 #### 배포완료 결과 화면
 
