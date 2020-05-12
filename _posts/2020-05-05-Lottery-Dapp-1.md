@@ -24,7 +24,7 @@ Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 1부
 
 설치가 필요한 목록 체크
 
-1. node.js (8버전 이상이면 문제 없음)
+####node.js (8버전 이상이면 문제 없음)
 - 홈페이지에서 직접 다운로드, 또는 **homebrew**(추천) 를 통한 다운로드
 
 ```
@@ -51,20 +51,20 @@ brew로 nvm 설치했을 때, nvm -v에서 nvm을 찾을 수 없다고 하는 �
 ```
 ![nodejs_download](/assets/pic/200512/nodejs_download.png)
 
-2. vscode (Visual Studio Code)
+####vscode (Visual Studio Code)
 - [홈페이지](https://code.visualstudio.com/)에서 다운로드
 
-3. truffle
+####truffle
 - 블로그의 블록체인 Dapp 개발에 트러플 활용하기 1부 - [Mac OS 트러플 설치하기](https://chaenchaen-dev.github.io/truffle/blockchain/react/dapp/Dapp-Truffle-blockchain-basic-1/) 포스팅 참고!
 ![truffle_install](/assets/pic/200512/truffle_install.png)
 
-4. ganache-cil
+####ganache-cil
 - 바로 블록체인을 사용할 수 있게 해주는 프로그램으로 터미널에서 아래의 명령어로 설치한다.
 ```
 npm -g install ganache-cil
 ```
 
-5. vscode - solidity extension
+####vscode - solidity extension
 - vscode에서 solidity 확장자 설치
 ![solidity_extention](/assets/pic/200512/solidity_extention.png)
 
