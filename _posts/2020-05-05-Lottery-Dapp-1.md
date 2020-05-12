@@ -45,12 +45,18 @@ brew로 nvm 설치했을 때, nvm -v에서 nvm을 찾을 수 없다고 하는 �
 ```
 ![nvm_success](/assets/pic/200512/nvm_success.png){: width="70%"}
 
+```
+~ nvm install 8.15.0    //강사랑 같은 버전 다운로드
+~ nvm ls    //node버전 목록 확인
+```
+![nodejs_download](/assets/pic/200512/nodejs_download.png)
 
 2. vscode (Visual Studio Code)
 - [홈페이지](https://code.visualstudio.com/)에서 다운로드
 
 3. truffle
 - 블로그의 블록체인 Dapp 개발에 트러플 활용하기 1부 - [Mac OS 트러플 설치하기](https://chaenchaen-dev.github.io/truffle/blockchain/react/dapp/Dapp-Truffle-blockchain-basic-1/) 포스팅 참고!
+![truffle_install](/assets/pic/200512/truffle_install.png)
 
 4. ganache-cil
 - 바로 블록체인을 사용할 수 있게 해주는 프로그램으로 터미널에서 아래의 명령어로 설치한다.
@@ -60,6 +66,7 @@ npm -g install ganache-cil
 
 5. vscode - solidity extension
 - vscode에서 solidity 확장자 설치
+![solidity_extention](/assets/pic/200512/solidity_extention.png)
 
 <br/>
 
