@@ -68,6 +68,9 @@ npm -g install ganache-cil
 - vscode에서 solidity 확장자 설치
 ![solidity_extention](/assets/pic/200512/solidity_extention.png)
 
+####Metamask
+- [메타마스크](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) 다운로드
+
 <br/>
 
 <br/>
