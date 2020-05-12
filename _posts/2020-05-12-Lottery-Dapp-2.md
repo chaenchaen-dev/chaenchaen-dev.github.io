@@ -37,7 +37,7 @@ Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 2부
 
 <br/>
 
-#### Visual Studio에서 project 열기
+### Visual Studio에서 project 열기
 
 1. contracts 에 Lottery.sol 파일 추가
 - Lottery.sol에 코드 추가
@@ -62,7 +62,7 @@ Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 2부
 
 <br/>
 
-#### 배포완료 결과 화면
+### 배포완료 결과 화면
 
 ![deploy_result](/assets/pic/200512/deploy_result.png)
 
