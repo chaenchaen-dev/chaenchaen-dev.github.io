@@ -155,15 +155,12 @@ Bet function이 해줘야 할 일
 
 Lottery.sol 에 **Bet** 함수 **추가**
 - getSomeValue, test.js에서 basic test 삭제
+- @dev 베팅을 한다. 유저는 0.005 ETH를 보내야 하고, 베팅용 1 byte 글자를 보낸다.
+- 큐에 저장된 베팅 정보는 이후 distribute 함수에서 해결된다.
+- @param challenges 유저가 베팅하는 글자
+- @return 함수가 잘 수행되었는지 확인해는 bool 값
+
 ```
-/*
- * @dev 베팅을 한다. 유저는 0.005 ETH를 보내야 하고, 베팅용 1 byte 글자를 보낸다.
- * 큐에 저장된 베팅 정보는 이후 distribute 함수에서 해결된다.
- * @param challenges 유저가 베팅하는 글자
- * @return 함수가 잘 수행되었는지 확인해는 bool 값
- */
-
-
 //event log
 event BET(uint256 index, address indexed bettor, uint256 amount, byte challenges, uint256 answerBlockNumber);
 
@@ -181,11 +178,12 @@ function bet(byte challenges) public payable returns(bool result){
  }
 ```
 <br/>
+
 여기까지 수행한 후 터미널에서 **컴파일**
 ```
 ~ truffle compile
 ```
-![compile1](/assets/pic/200512/compile1.png){: width="50%"}
+![compile1](/assets/pic/200512/compile1.png){: width="60%"}
 
 <br/>
 
