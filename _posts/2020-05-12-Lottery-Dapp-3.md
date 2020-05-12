@@ -197,8 +197,46 @@ function bet(byte challenges) public payable returns(bool result){
 
 ### Bet 함수 테스트
 
+lottery.test.js 테스트 코드 추가
 
+```
+    describe('Bet', function () {
+        it.only('should fail when the bet money is not 0.005 ETH', async () => {
+            // Fail transaction
+            await assertRevert(lottery.bet('0xab', {from : user1, value:4000000000000000})); // 0.004 ETH
+            // transaction object {chainId, value, to, from, gas(Limit), gasPrice}
+        })
+        it('should put the bet to the bet queue with 1 bet', async () => {
+            await lottery.bet('0xab', {from : user1, value:5000000000000000}); // 0.005 ETH success
+            // bet
 
+            // check contract balance
+
+            // check bet info
+
+            // check log
+
+        })
+    })
+```
+
+asserRevert.js 파일 test 폴더에 생성 & 코드 작성
+
+```
+
+module.exports = async (promise) => {
+    try {
+        await promise;
+        assert.fail('Expected revert not received');
+    } catch (error) {
+        const revertFound = error.message.search('revert') >= 0;
+        assert(revertFound, `Expected "revert", got ${error} instead`);
+    }
+}
+
+```
+
+![test5](/assets/pic/200512/test5.png){: width="70%"}
 
 <br/>
 <br/>
