@@ -182,9 +182,11 @@ function bet(byte challenges) public payable returns(bool result){
 <br/>
 
 여기까지 수행한 후 터미널에서 **컴파일**
+
 ```
 ~ truffle compile
 ```
+
 ![compile1](/assets/pic/200512/compile1.png){: width="60%"}
 
 <br/>
