@@ -78,7 +78,7 @@ contract Lottery{
 
 ### Lottery Domain 및 Queue 설계
 
-Lottery.sol 코드
+**Lottery.sol** 코드
 
 ```
 pragma solidity >=0.4.21 <0.7.0;
@@ -147,6 +147,54 @@ pragma solidity >=0.4.21 <0.7.0;
 <br/>
 
 ### Bet 함수 구현
+
+Bet function이 해줘야 할 일
+1. Queue에 Bet 정보 확인
+2. 돈이 들어왔는지 확인
+3. event log 기록
+
+Lottery.sol 에 **Bet** 함수 **추가**
+- getSomeValue, test.js에서 basic test 삭제
+```
+/*
+ * @dev 베팅을 한다. 유저는 0.005 ETH를 보내야 하고, 베팅용 1 byte 글자를 보낸다.
+ * 큐에 저장된 베팅 정보는 이후 distribute 함수에서 해결된다.
+ * @param challenges 유저가 베팅하는 글자
+ * @return 함수가 잘 수행되었는지 확인해는 bool 값
+ */
+
+
+//event log
+event BET(uint256 index, address indexed bettor, uint256 amount, byte challenges, uint256 answerBlockNumber);
+
+function bet(byte challenges) public payable returns(bool result){
+     // Check the proper ether is sent
+    require(msg.value == BET_AMOUNT, "Not enough ETH");
+
+    // Push bet to the queue
+    require(pushBet(challenges), "Fail to add a new Bet Info");
+
+    // Emit event
+    emit BET(_tail - 1, msg.sender, msg.value, challenges, block.number + BET_BLOCK_INTERVAL);
+
+    return true;
+ }
+```
+<br/>
+여기까지 수행한 후 터미널에서 **컴파일**
+```
+~ truffle compile
+```
+![compile1](/assets/pic/200512/compile1.png){: width="50%"}
+
+<br/>
+
+* * *
+
+<br/>
+
+### Bet 함수 테스트
+
 
 
 
