@@ -64,3 +64,7 @@ Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 2부
 #### 배포완료 결과 화면
 
 ![deploy_result](/assets/pic/200512/deploy_result.png)
+
+</br>
+</br>
+</br>
