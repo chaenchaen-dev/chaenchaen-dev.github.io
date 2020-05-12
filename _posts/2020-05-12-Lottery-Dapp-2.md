@@ -56,15 +56,104 @@ Ethereum 실전! 초보자를 위한 Lottery Dapp 개발 2부
 6. truffle migrate
 - 재시도 했을 경우 truffle migrate --reset
 
+
+
+### 배포완료 결과 화면
+
+![deploy_result](/assets/pic/200512/deploy_result.png)
+
 <br/>
 
 ***
 
 <br/>
 
-### 배포완료 결과 화면
+### 기본적인 truffle test
 
-![deploy_result](/assets/pic/200512/deploy_result.png)
+**Lottery.sol** 파일에 코드를 추가
+```
+pragma solidity >=0.4.21 <0.7.0;
+
+contract Lottery{
+
+    address public owner;
+
+    constructor() public {
+        owner = msg.sender;
+    }
+
+    function getSomeValue( ) public pure returns (uint256 value){
+        return 5;
+    }
+
+}
+```
+
+test 폴더에 **lottery.test.js** 파일 **생성**
+```
+const Lottery = artifacts.require("Lottery");
+
+//기본적인 테스트 구조
+contract('Lottery', function([deployer, user1, user2]) {
+
+
+    beforeEach(async () => {
+        console.log('Before each')
+    })
+
+    it('Basic Test', async () => {
+        console.log('Basic Test')
+    })
+
+});
+
+```
+
+### Truffle test 명령어로 단일테스트
+```
+~ truffle test test/lottery.test.js
+```
+
+![test1](/assets/pic/200512/test1.png){: width="70%"}
+
+### lottery.test.js 파일 **수정** 해서 테스트 1
+```
+assert.equal(10, 10) //console.log('Basic test') 밑에 추가
+```
+
+![test2](/assets/pic/200512/test2.png){: width="70%"}
+
+### lottery.test.js 파일 **수정** 해서 테스트 2
+
+```
+const Lottery = artifacts.require("Lottery");
+
+//기본적인 테스트 구조
+contract('Lottery', function([deployer, user1, user2]) {
+
+
+    beforeEach(async () => {
+        console.log('Before each')
+        lottery = await Lottery.new();
+    })
+
+    it('Basic Test', async () => {
+        console.log('Basic Test')
+        let owner = await lottery.owner();
+        let value = await lottery.getSomeValue();
+
+        console.log(`owner : ${owner}`);
+        console.log(`value : ${value}`)
+
+        assert.equal(value, 5)
+    })
+
+});
+```
+
+![test3](/assets/pic/200512/test3.png){: width="70%"}
+
+
 
 <br/>
 <br/>
