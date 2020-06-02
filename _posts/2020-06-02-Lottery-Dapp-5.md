@@ -142,3 +142,48 @@ function isMatch(byte challenges, bytes32 answer) public pure returns (BettingRe
 
 컴파일 결과화면
 ![compile_result](/assets/compile_result.png)
+
+isMatch() 테스트를 위해서 lottery.test.js 파일에 코드 추가 & 수정
+
+```
+describe.only('isMatch', function () {
+    it('should be BettingResult.Win when two characters match', async () => {
+        let blockHash = '0xabbe4645a8d37dc4d3c0a2b9e34588af78cd3cd0a42cfa73b9116774fd6edf86'
+        let matchingResult = await lottery.isMatch('0xab', blockHash);
+        assert.equal(matchingResult, 1);
+     })
+}) //isMatch()
+```
+테스트 결과화면
+
+![isMatch_test](/assets/isMatch_test.png)
+성공!
+
+isMatch() 경우의 수 추가
+
+```
+describe.only('isMatch', function () {
+        let blockHash = '0xab03e5d54fb802fb0dc3ef6100aed0dad20c72b7a27a53f6c9e0e15cd1c0aba2';
+        it('should be BettingResult.Win when two characters match', async () => {
+
+            let matchingResult = await lottery.isMatch('0xab', blockHash);
+            assert.equal(matchingResult, 1);
+         })
+
+         it('should be BettingResult.Fail when two characters match', async () => {
+            let matchingResult = await lottery.isMatch('0xcd', blockHash);
+            assert.equal(matchingResult, 0);
+        })
+
+        it('should be BettingResult.Draw when two characters match', async () => {
+            let matchingResult = await lottery.isMatch('0xaf', blockHash);
+            assert.equal(matchingResult, 2);
+
+            matchingResult = await lottery.isMatch('0xfb', blockHash);
+            assert.equal(matchingResult, 2);
+        })
+    }) //isMatch()
+```
+![match_test](/assets/match_test.png)
+
+test 성공!
