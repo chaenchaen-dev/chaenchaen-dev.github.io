@@ -64,7 +64,7 @@ function distribute() public {
 }
 ```
 
-BlockStatus()
+### BlockStatus() 구현
 
 ```
 enum BlockStatus {Checkable, NotRevealed, BlockLimitPassed}
