@@ -179,3 +179,9 @@ describe('Bet', function () {
 다시 truffle test test/lottery.test.js
 
 ![chai_success](/assets/chai_success.png)
+
+여기까지 **bet function** 테스트 **완료** !!
+
+<br/>
+<br/>
+<br/>
