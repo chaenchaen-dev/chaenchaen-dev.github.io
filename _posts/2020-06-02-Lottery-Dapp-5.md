@@ -156,7 +156,7 @@ describe.only('isMatch', function () {
 ```
 테스트 결과화면
 
-![isMatch_test](/assets/isMatch_test.png)
+![isMatch_test](/assets/isMatch_test.png){: width="70%"}
 성공!
 
 isMatch() 경우의 수 추가
@@ -184,6 +184,6 @@ describe.only('isMatch', function () {
         })
     }) //isMatch()
 ```
-![match_test](/assets/match_test.png)
+![match_test](/assets/match_test.png){: width="70%"}
 
 test 성공!
